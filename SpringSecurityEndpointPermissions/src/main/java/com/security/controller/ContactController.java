@@ -1,0 +1,14 @@
+package com.security.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ContactController {
+	
+	@GetMapping("/contact")
+	public String saveContactInquiryDetails(String input) {
+		return "Inquiry details are saved to the DB -can be accessed by anyone. no need to login";
+	}
+
+}
